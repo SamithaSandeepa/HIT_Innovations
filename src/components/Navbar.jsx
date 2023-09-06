@@ -26,7 +26,7 @@ const Navbar = ({ activeSection, onScroll, isHidden }) => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-white ${
+            className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-orange-500 ${
               active === nav.title ? "text-dimWhite" : "text-dimWhite"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}

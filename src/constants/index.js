@@ -15,6 +15,7 @@ import {
   star,
   smartfarm,
   universal,
+  charging,
 } from "../assets";
 
 export const navLinks = [
@@ -53,7 +54,7 @@ export const features = [
   },
   {
     id: "feature-3",
-    icon: send,
+    icon: charging,
     title: "CHARGING STATION",
     content:
       "A balance transfer credit card can save you a lot of money in interest charges.",

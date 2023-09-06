@@ -26,6 +26,7 @@ import people03 from "./people03.png";
 import envpicjpg from "./3421101-removebg-preview.png";
 import smartfarm from "./smartfarm.png";
 import universal from "./universal.png";
+import charging from "./charging.png";
 
 export {
   airbnb,
@@ -56,4 +57,5 @@ export {
   envpicjpg,
   universal,
   smartfarm,
+  charging,
 };
