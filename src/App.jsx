@@ -41,8 +41,6 @@ const App = () => {
     };
   }, []); // The empty dependency array ensures that this effect runs only once, like componentDidMount
 
-  console.log(handleScroll, isHidden);
-
   return (
     <div className="bg-primary w-full overflow-hidden">
       <div className="fixed top-0 w-full z-10">
@@ -63,10 +61,10 @@ const App = () => {
         <div className={`${styles.boxWidth}`}>
           {/* <Stats /> */}
           <Business />
-          <Billing />
-          <CardDeal />
-          <Testimonials />
-          <Clients />
+          {/* <Billing /> */}
+          {/* <CardDeal /> */}
+          {/* <Testimonials /> */}
+          {/* <Clients /> */}
           <CTA />
           <Footer />
         </div>

@@ -35,13 +35,7 @@ const Hero = () => {
           alt="billing"
           className="w-[100%] h-[100%] relative z-[5]"
         /> */}
-        {/* <div className="bg-orange-500 relative overflow-hidden"> */}
-        <img
-          src={envpicjpg}
-          alt="billing"
-          className="w-[100%] h-[100%] p-5"
-        />
-        {/* </div> */}
+        <img src={envpicjpg} alt="billing" className="w-[100%] h-[100%] p-5" />
 
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
