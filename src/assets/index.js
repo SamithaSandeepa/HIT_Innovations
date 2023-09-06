@@ -4,7 +4,7 @@ import binance from "./binance.png";
 import card from "./card.png";
 import coinbase from "./coinbase.png";
 import dropbox from "./dropbox.png";
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import quotes from "./quotes.svg";
 import robot from "./robot.png";
 import send from "./Send.svg";
@@ -23,6 +23,9 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
+import envpicjpg from "./3421101-removebg-preview.png";
+import smartfarm from "./smartfarm.png";
+import universal from "./universal.png";
 
 export {
   airbnb,
@@ -50,4 +53,7 @@ export {
   people01,
   people02,
   people03,
+  envpicjpg,
+  universal,
+  smartfarm,
 };

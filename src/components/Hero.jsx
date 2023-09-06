@@ -1,5 +1,5 @@
 import styles from "../style";
-import { discount, robot } from "../assets";
+import { discount, robot, envpicjpg } from "../assets";
 import GetStarted from "./GetStarted";
 
 const Hero = () => {
@@ -11,8 +11,8 @@ const Hero = () => {
       <div
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
       >
-        <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] uppercase">
+        <div className="flex flex-row justify-between items-center w-full ">
+          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] uppercase pt-10">
             high-intensity technology <br className="sm:block hidden" />{" "}
             <span className="text-gradient capitalize ">Innovations</span>{" "}
           </h1>
@@ -30,10 +30,16 @@ const Hero = () => {
       <div
         className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
       >
-        <img
+        {/* <img
           src={robot}
           alt="billing"
           className="w-[100%] h-[100%] relative z-[5]"
+        /> */}
+
+        <img
+          src={envpicjpg}
+          alt="billing"
+          className="w-[100%] h-[100%] relative z-[5] p-5"
         />
 
         {/* gradient start */}

@@ -1,4 +1,21 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import {
+  people01,
+  people02,
+  people03,
+  facebook,
+  instagram,
+  linkedin,
+  twitter,
+  airbnb,
+  binance,
+  coinbase,
+  dropbox,
+  send,
+  shield,
+  star,
+  smartfarm,
+  universal,
+} from "../assets";
 
 export const navLinks = [
   {
@@ -22,22 +39,22 @@ export const navLinks = [
 export const features = [
   {
     id: "feature-1",
-    icon: star,
-    title: "Rewards",
+    icon: universal,
+    title: "UNIVERSAL ENERGY",
     content:
       "The best credit cards offer some tantalizing combinations of promotions and prizes",
   },
   {
     id: "feature-2",
-    icon: shield,
-    title: "100% Secured",
+    icon: smartfarm,
+    title: "SMART FARM",
     content:
       "We take proactive steps make sure your information and transactions are secure.",
   },
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "CHARGING STATION",
     content:
       "A balance transfer credit card can save you a lot of money in interest charges.",
   },
