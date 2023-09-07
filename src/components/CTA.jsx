@@ -98,7 +98,7 @@ const CTA = () => {
         </div>
       </div>
       <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center"></div>
-      <Wave mask="url(#mask)" fill="#1277b0">
+      <Wave mask="url(#mask)" fill="#ed6618">
         <defs>
           <linearGradient id="gradient" gradientTransform="rotate(90)">
             <stop offset="0" stopColor="white" />
