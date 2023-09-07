@@ -1,7 +1,7 @@
 import styles from "./style";
 import React, { useEffect, useState, CSSProperties } from "react";
+import { Routes } from "react-router-dom"; // Import Routes from react-router-dom
 import {
-  Billing,
   Business,
   CardDeal,
   Clients,
@@ -62,9 +62,8 @@ const App = () => {
 
           <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
-              {/* <Stats /> */}
+              <Routes />
               <Business />
-              {/* <Billing /> */}
               {/* <CardDeal /> */}
               {/* <Testimonials /> */}
               {/* <Clients /> */}

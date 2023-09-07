@@ -44,6 +44,7 @@ export const features = [
     title: "UNIVERSAL ENERGY",
     content:
       "The best credit cards offer some tantalizing combinations of promotions and prizes",
+    link: "/universal",
   },
   {
     id: "feature-2",
@@ -51,6 +52,7 @@ export const features = [
     title: "SMART FARM",
     content:
       "We take proactive steps make sure your information and transactions are secure.",
+    link: "#",
   },
   {
     id: "feature-3",
@@ -58,6 +60,7 @@ export const features = [
     title: "CHARGING STATION",
     content:
       "A balance transfer credit card can save you a lot of money in interest charges.",
+    link: "#",
   },
 ];
 
