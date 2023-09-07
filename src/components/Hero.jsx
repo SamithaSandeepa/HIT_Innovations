@@ -30,11 +30,6 @@ const Hero = () => {
       <div
         className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
       >
-        {/* <img
-          src={robot}
-          alt="billing"
-          className="w-[100%] h-[100%] relative z-[5]"
-        /> */}
         <img src={envpicjpg} alt="billing" className="w-[100%] h-[100%] p-5" />
 
         {/* gradient start */}
@@ -43,10 +38,10 @@ const Hero = () => {
         <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
         {/* gradient end */}
       </div>
-
+      {/* 
       <div className={`ss:hidden ${styles.flexCenter}`}>
         <GetStarted />
-      </div>
+      </div> */}
     </section>
   );
 };

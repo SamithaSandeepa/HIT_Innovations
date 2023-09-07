@@ -28,7 +28,14 @@ const FeatureCard = ({ icon, title, content, index }) => (
 
 const Business = () => (
   <section id="features">
-    <div className="grid grid-cols-3 gap-4">
+    <div className="hidden lg:block">
+      <div className="grid grid-cols-3 gap-4">
+        {features.map((feature, index) => (
+          <FeatureCard key={feature.id} {...feature} index={index} />
+        ))}
+      </div>
+    </div>
+    <div className={`block lg:hidden flex-col ${styles.flexCenter}`}>
       {features.map((feature, index) => (
         <FeatureCard key={feature.id} {...feature} index={index} />
       ))}
