@@ -1,8 +1,30 @@
 import styles from "../style";
 import { discount, robot, envpicjpg } from "../assets";
 import GetStarted from "./GetStarted";
+import { useStateContext } from "../context/ContextProvider";
+import React, { useState, useEffect } from "react";
 
 const Hero = () => {
+  const { setLoading } = useStateContext();
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    // Activate loading while loading the image
+    setLoading(true);
+
+    // Simulate loading the image for 5 seconds (replace this with your actual image loading logic)
+    const timeout = setTimeout(() => {
+      setImageLoaded(true);
+      // Deactivate loading once the image has loaded
+      setLoading(false);
+    }, 5000);
+
+    return () => {
+      // Clean up the timeout if the component unmounts
+      clearTimeout(timeout);
+    };
+  }, [setLoading]);
+
   return (
     <section
       id="home"
@@ -30,7 +52,23 @@ const Hero = () => {
       <div
         className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
       >
-        <img src={envpicjpg} alt="billing" className="w-[100%] h-[100%] p-5" />
+        <div className="relative w-[100%] h-[100%]">
+          {!imageLoaded && (
+            <div className="absolute top-0 left-0 w-full h-full flex items-center rounded-lg justify-center bg-white opacity-10">
+              {/* Display your loading spinner here */}
+              <div className="spinner">Loading...</div>
+            </div>
+          )}
+
+          {imageLoaded && (
+            <img
+              src={envpicjpg}
+              alt="billing"
+              className="w-full h-full p-5"
+              onLoad={() => setImageLoaded(true)} // Set imageLoaded to true when the image has loaded
+            />
+          )}
+        </div>
 
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />

@@ -1,10 +1,13 @@
 import { features } from "../constants";
+import React from "react";
 import styles, { layout } from "../style";
 import Button from "./Button";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div
-    className={`flex flex-col rounded-[20px]  shadow-inner hover:bg-opacity-25 hover:bg-gray-500 hover:shadow-lg p-5 hover:scale-105 duration-300 ${
+    className={`flex flex-col rounded-[20px] shadow-inner hover:bg-opacity-25 hover:bg-gray-500 hover:shadow-lg p-5 hover:scale-105 duration-300 ${
       index !== features.length - 1 ? "mb-0" : "mb-0"
     } `}
   >
@@ -19,8 +22,12 @@ const FeatureCard = ({ icon, title, content, index }) => (
         />
       </div>
       <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2 text-white">{title}</div>
-        <p className="text-gray-400 text-base">{content}</p>
+        <div className="font-bold text-xl mb-2 text-white">
+          {title}
+        </div>
+        <p className="text-gray-400 text-base">
+          {content}
+        </p>
       </div>
     </div>
   </div>

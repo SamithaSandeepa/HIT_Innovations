@@ -1,5 +1,5 @@
 import styles from "./style";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, CSSProperties } from "react";
 import {
   Billing,
   Business,
@@ -12,6 +12,7 @@ import {
   Testimonials,
   Hero,
 } from "./components";
+import { ContextProvider } from "./context/ContextProvider";
 
 const App = () => {
   const [isHidden, setIsHidden] = useState(false);
@@ -42,34 +43,38 @@ const App = () => {
   }, []); // The empty dependency array ensures that this effect runs only once, like componentDidMount
 
   return (
-    <div className="bg-primary w-full overflow-hidden">
-      <div className="fixed top-0 w-full z-10">
-        <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-          <div className={`${styles.boxWidth}`}>
-            <Navbar onScroll={handleScroll} isHidden={isHidden} />
+    <>
+      <ContextProvider>
+        <div className="bg-primary w-full overflow-hidden">
+          <div className="fixed top-0 w-full z-10">
+            <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+              <div className={`${styles.boxWidth}`}>
+                <Navbar onScroll={handleScroll} isHidden={isHidden} />
+              </div>
+            </div>
+          </div>
+
+          <div className={`bg-primary  ${styles.flexStart}`}>
+            <div className={`${styles.boxWidth}`}>
+              <Hero />
+            </div>
+          </div>
+
+          <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+            <div className={`${styles.boxWidth}`}>
+              {/* <Stats /> */}
+              <Business />
+              {/* <Billing /> */}
+              {/* <CardDeal /> */}
+              {/* <Testimonials /> */}
+              {/* <Clients /> */}
+              <CTA />
+              <Footer />
+            </div>
           </div>
         </div>
-      </div>
-
-      <div className={`bg-primary  ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Hero />
-        </div>
-      </div>
-
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
-          {/* <Stats /> */}
-          <Business />
-          {/* <Billing /> */}
-          {/* <CardDeal /> */}
-          {/* <Testimonials /> */}
-          {/* <Clients /> */}
-          <CTA />
-          <Footer />
-        </div>
-      </div>
-    </div>
+      </ContextProvider>
+    </>
   );
 };
 
