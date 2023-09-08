@@ -1,4 +1,3 @@
-import { apple, bill, google } from "../assets";
 import styles, { layout } from "../style";
 import { Link } from "react-router-dom";
 
