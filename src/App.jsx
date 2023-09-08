@@ -5,7 +5,7 @@ import {
   Business,
   CardDeal,
   Clients,
-  CTA,
+  Contactus,
   Footer,
   Navbar,
   Stats,
@@ -67,7 +67,7 @@ const App = () => {
               {/* <CardDeal /> */}
               {/* <Testimonials /> */}
               {/* <Clients /> */}
-              <CTA />
+              <Contactus />
               <Footer />
             </div>
           </div>
