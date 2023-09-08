@@ -2,12 +2,10 @@ import { features } from "../constants";
 import React, { useState, useEffect } from "react";
 import styles, { layout } from "../style";
 import Button from "./Button";
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
 import { Link } from "react-router-dom";
-import Zoom from "react-reveal/Zoom";
+// import Zoom from "react-reveal/Zoom";
 import { useStateContext } from "../context/ContextProvider";
-import Bounce from "react-reveal/Zoom";
+// import Bounce from "react-reveal/Zoom";
 
 const FeatureCard = ({ icon, title, content, link, index }) => {
   const { setLoading } = useStateContext();
@@ -32,42 +30,40 @@ const FeatureCard = ({ icon, title, content, link, index }) => {
 
   return (
     <>
-      <Zoom>
-        <div
-          className={`flex flex-col rounded-[20px] shadow-inner hover:bg-opacity-25 hover:bg-gray-500 hover:shadow-lg p-5 hover:scale-105 duration-300 ${
-            index !== features.length - 1 ? "mb-0" : "mb-0"
-          } `}
-        >
-          {!imageLoaded && (
-            <div className="absolute top-0 left-0 w-full h-full flex items-center rounded-lg justify-center bg-white opacity-10">
-              <div className="spinner">Loading...</div>
-            </div>
-          )}
+      {/* <Zoom> */}
+      <div
+        className={`flex flex-col rounded-[20px] shadow-inner hover:bg-opacity-25 hover:bg-gray-500 hover:shadow-lg p-5 hover:scale-105 duration-300 ${
+          index !== features.length - 1 ? "mb-0" : "mb-0"
+        } `}
+      >
+        {!imageLoaded && (
+          <div className="absolute top-0 left-0 w-full h-full flex items-center rounded-lg justify-center bg-white opacity-10">
+            <div className="spinner">Loading...</div>
+          </div>
+        )}
 
-          {imageLoaded && (
-            <Link to={link}>
-              <div className="max-w-sm rounded overflow-hidden">
-                <Bounce>
-                  <div className="flex justify-center items-center ">
-                    <img
-                      src={icon}
-                      alt="billing"
-                      className="w-full h-full p-5"
-                      onLoad={() => setImageLoaded(true)} // Set imageLoaded to true when the image has loaded
-                    />
-                  </div>
-                  <div className="px-6 py-4">
-                    <div className="font-bold text-xl mb-2 text-white">
-                      {title}
-                    </div>
-                    <p className="text-gray-400 text-base">{content}</p>
-                  </div>
-                </Bounce>
+        {imageLoaded && (
+          <Link to={link}>
+            <div className="max-w-sm rounded overflow-hidden">
+              {/* <Bounce> */}
+              <div className="flex justify-center items-center ">
+                <img
+                  src={icon}
+                  alt="billing"
+                  className="w-full h-full p-5"
+                  onLoad={() => setImageLoaded(true)} // Set imageLoaded to true when the image has loaded
+                />
               </div>
-            </Link>
-          )}
-        </div>
-      </Zoom>
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2 text-white">{title}</div>
+                <p className="text-gray-400 text-base">{content}</p>
+              </div>
+              {/* </Bounce> */}
+            </div>
+          </Link>
+        )}
+      </div>
+      {/* </Zoom> */}
     </>
   );
 };

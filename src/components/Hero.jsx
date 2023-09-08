@@ -3,7 +3,7 @@ import { discount, robot, envpicjpg } from "../assets";
 import GetStarted from "./GetStarted";
 import { useStateContext } from "../context/ContextProvider";
 import React, { useState, useEffect } from "react";
-import Bounce from "react-reveal/Bounce";
+// import Bounce from "react-reveal/Bounce";
 
 const Hero = () => {
   const { setLoading } = useStateContext();
@@ -57,16 +57,16 @@ const Hero = () => {
               <div className="w-12 h-12 border-t-4 border-orange-500 border-solid rounded-full animate-spin opacity-80"></div>
             </div>
           )}
-          <Bounce>
-            {imageLoaded && (
-              <img
-                src={envpicjpg}
-                alt="billing"
-                className="w-full h-full p-5"
-                onLoad={() => setImageLoaded(true)} // Set imageLoaded to true when the image has loaded
-              />
-            )}
-          </Bounce>
+          {/* <Bounce> */}
+          {imageLoaded && (
+            <img
+              src={envpicjpg}
+              alt="billing"
+              className="w-full h-full p-5"
+              onLoad={() => setImageLoaded(true)} // Set imageLoaded to true when the image has loaded
+            />
+          )}
+          {/* </Bounce> */}
         </div>
 
         {/* gradient start */}
