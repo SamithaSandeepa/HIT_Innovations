@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import App from "./App";
 import Universal from "./components/Universal"; // Import the Billing component
 import Smartfarm from "./components/Smartfarm";
-import Chargingnet from "./components/chargingnet";
+import Chargingnet from "./components/Chargingnet";
 
 const RoutesConfig = () => (
   <Router>
