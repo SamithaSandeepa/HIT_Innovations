@@ -10,7 +10,7 @@ import Testimonials from "./Testimonials";
 import Hero from "./Hero";
 import Universal from "./Universal";
 import Smartfarm from "./Smartfarm";
-import Chargingnet from "./Chargingnet";
+// import Chargingnet from "./Chargingnet";
 
 export {
   Navbar,
@@ -23,4 +23,6 @@ export {
   Footer,
   Testimonials,
   Hero,
+  Universal,
+  Smartfarm,
 };
