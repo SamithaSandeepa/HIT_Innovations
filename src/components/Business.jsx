@@ -7,7 +7,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 import { Link } from "react-router-dom";
 import Zoom from "react-reveal/Zoom";
 import { useStateContext } from "../context/ContextProvider";
-import Bounce from "react-reveal/Zoom";
+// import Bounce from "react-reveal/Zoom";
 
 const FeatureCard = ({ icon, title, content, link, index }) => {
   const { setLoading } = useStateContext();
@@ -47,22 +47,22 @@ const FeatureCard = ({ icon, title, content, link, index }) => {
           {imageLoaded && (
             <Link to={link}>
               <div className="max-w-sm rounded overflow-hidden">
-                <Bounce>
-                  <div className="flex justify-center items-center ">
-                    <img
-                      src={icon}
-                      alt="billing"
-                      className="w-full h-full p-5"
-                      onLoad={() => setImageLoaded(true)} // Set imageLoaded to true when the image has loaded
-                    />
+                {/* <Bounce> */}
+                <div className="flex justify-center items-center ">
+                  <img
+                    src={icon}
+                    alt="billing"
+                    className="w-full h-full p-5"
+                    onLoad={() => setImageLoaded(true)} // Set imageLoaded to true when the image has loaded
+                  />
+                </div>
+                <div className="px-6 py-4">
+                  <div className="font-bold text-xl mb-2 text-white">
+                    {title}
                   </div>
-                  <div className="px-6 py-4">
-                    <div className="font-bold text-xl mb-2 text-white">
-                      {title}
-                    </div>
-                    <p className="text-gray-400 text-base">{content}</p>
-                  </div>
-                </Bounce>
+                  <p className="text-gray-400 text-base">{content}</p>
+                </div>
+                {/* </Bounce> */}
               </div>
             </Link>
           )}
