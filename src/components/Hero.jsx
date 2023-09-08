@@ -18,7 +18,7 @@ const Hero = () => {
       setImageLoaded(true);
       // Deactivate loading once the image has loaded
       setLoading(false);
-    }, 1000);
+    }, 3000);
 
     return () => {
       // Clean up the timeout if the component unmounts
