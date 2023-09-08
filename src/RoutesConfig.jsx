@@ -8,11 +8,10 @@ import Chargingnet from "./components/Chargingnet";
 const RoutesConfig = () => (
   <Router>
     <Routes>
-      <Route path="/universal" element={<Universal />} />{" "}
-      <Route path="/smart-farm" element={<Smartfarm />} />{" "}
-      <Route path="/charging-net" element={<Chargingnet />} />{" "}
-      {/* Use "element" prop */}
-      <Route path="*" element={<App />} /> {/* Use "element" prop */}
+      <Route path="/universal" element={<Universal />} />
+      <Route path="/smart-farm" element={<Smartfarm />} />
+      <Route path="/charging-net" element={<Chargingnet />} />
+      <Route path="*" element={<App />} />
     </Routes>
   </Router>
 );
