@@ -37,7 +37,7 @@ const FeatureCard = ({ icon, title, content, link, index }) => {
         } `}
       >
         {!imageLoaded && (
-          <div className="absolute top-0 left-0 w-full h-full flex items-center rounded-lg justify-center bg-white opacity-10">
+          <div className="flex flex-col rounded-[20px] shadow-inner bg-opacity-25 bg-gray-500 hover:shadow-lg p-5 hover:scale-105 duration-300">
             <div className="spinner">Loading...</div>
           </div>
         )}

@@ -13,7 +13,7 @@ const CustomLoading = ({ loading }) => (
         <div className="custom-loading-spinner"></div>
       </div>
     )}
-    <style jsx>{`
+    <style jsx="true">{`
       .custom-loading {
         display: flex;
         justify-content: center;
