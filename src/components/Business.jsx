@@ -20,7 +20,7 @@ const FeatureCard = ({ icon, title, content, link, index }) => {
       setImageLoaded(true);
       // Deactivate loading once the image has loaded
       setLoading(false);
-    }, 5000);
+    }, 4000);
 
     return () => {
       // Clean up the timeout if the component unmounts
@@ -38,7 +38,11 @@ const FeatureCard = ({ icon, title, content, link, index }) => {
       >
         {!imageLoaded && (
           <div className="flex flex-col rounded-[20px] shadow-inner bg-opacity-25 bg-gray-500 hover:shadow-lg p-5 hover:scale-105 duration-300">
-            <div className="spinner">Loading...</div>
+            <div className="flex items-center justify-center space-x-2 px-2">
+              <div className="h-2 w-2 bg-orange-500 rounded-full animate-ping"></div>
+              <div className="h-2 w-2 bg-white rounded-full animate-ping"></div>
+              <div className="h-2 w-2 bg-orange-500 rounded-full animate-ping"></div>
+            </div>
           </div>
         )}
 
