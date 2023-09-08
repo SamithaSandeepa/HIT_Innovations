@@ -2,8 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import App from "./App";
 import Universal from "./components/Universal"; // Import the Billing component
-import Smartfarm from './components/Smartfarm';
-import Chargingnet from './components/chargingnet'
+import Smartfarm from "./components/Smartfarm";
+import Chargingnet from "./components/chargingnet";
 
 const RoutesConfig = () => (
   <Router>
@@ -12,7 +12,7 @@ const RoutesConfig = () => (
       <Route path="/smart-farm" element={<Smartfarm />} />{" "}
       <Route path="/charging-net" element={<Chargingnet />} />{" "}
       {/* Use "element" prop */}
-      <Route path="/" element={<App />} /> {/* Use "element" prop */}
+      <Route path="*" element={<App />} /> {/* Use "element" prop */}
     </Routes>
   </Router>
 );

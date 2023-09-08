@@ -28,15 +28,15 @@ export const navLinks = [
     title: "Features",
   },
   {
-    id: "universal",
+    id: "/universal",
     title: "Universal Energy",
   },
   {
-    id: "smart-farm",
+    id: "/smart-farm",
     title: "Smart Farm",
   },
   {
-    id: "charging-net",
+    id: "/charging-net",
     title: "Charging Station",
   },
   {
