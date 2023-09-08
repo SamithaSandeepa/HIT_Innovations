@@ -2,10 +2,8 @@ import { features } from "../constants";
 import React, { useState, useEffect } from "react";
 import styles, { layout } from "../style";
 import Button from "./Button";
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
 import { Link } from "react-router-dom";
-import Zoom from "react-reveal/Zoom";
+// import Zoom from "react-reveal/Zoom";
 import { useStateContext } from "../context/ContextProvider";
 // import Bounce from "react-reveal/Zoom";
 

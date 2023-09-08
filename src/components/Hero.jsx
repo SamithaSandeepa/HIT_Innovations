@@ -3,7 +3,7 @@ import { discount, robot, envpicjpg } from "../assets";
 import GetStarted from "./GetStarted";
 import { useStateContext } from "../context/ContextProvider";
 import React, { useState, useEffect } from "react";
-import Bounce from "react-reveal/Bounce";
+// import Bounce from "react-reveal/Bounce";
 
 const Hero = () => {
   const { setLoading } = useStateContext();
