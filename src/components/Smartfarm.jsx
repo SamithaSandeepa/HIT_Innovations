@@ -2,8 +2,8 @@ import { apple, bill, google } from "../assets";
 import styles, { layout } from "../style";
 import { Link } from "react-router-dom";
 
-const Universal = () => (
-  <section id="universal">
+const Smartfarm = () => (
+  <section id="smart-farm">
     <div className="bg-primary py-5 px-5">
       <Link
         to="/"
@@ -14,10 +14,10 @@ const Universal = () => (
     </div>
     <div className="container mx-auto">
       <div className="flex flex-col text-center w-full mb-12">
-        <h2 className={styles.headingwhite}>UNIVERSAL ENERGY</h2>
+        <h2 className={styles.headingwhite}>Smart Farm</h2>
       </div>
     </div>
   </section>
 );
 
-export default Universal;
+export default Smartfarm;

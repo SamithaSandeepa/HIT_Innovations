@@ -3,6 +3,7 @@ import { discount, robot, envpicjpg } from "../assets";
 import GetStarted from "./GetStarted";
 import { useStateContext } from "../context/ContextProvider";
 import React, { useState, useEffect } from "react";
+import Bounce from "react-reveal/Bounce";
 
 const Hero = () => {
   const { setLoading } = useStateContext();
@@ -10,7 +11,7 @@ const Hero = () => {
 
   useEffect(() => {
     // Activate loading while loading the image
-    setLoading(true);
+    // setLoading(true);
 
     // Simulate loading the image for 5 seconds (replace this with your actual image loading logic)
     const timeout = setTimeout(() => {
@@ -38,9 +39,6 @@ const Hero = () => {
             high-intensity technology <br className="sm:block hidden" />{" "}
             <span className="text-orange-500 capitalize ">Innovations</span>{" "}
           </h1>
-          {/* <div className="ss:flex hidden md:mr-4 mr-0">
-            <GetStarted />
-          </div> */}
         </div>
         <p className={`${styles.paragraph} max-w-[470px] mt-5 text-justify`}>
           HIT Innovation's vision is to create and market smart products
@@ -55,19 +53,20 @@ const Hero = () => {
         <div className="relative w-[100%] h-[100%]">
           {!imageLoaded && (
             <div className="absolute top-0 left-0 w-full h-full flex items-center rounded-lg justify-center bg-white opacity-10">
-              {/* Display your loading spinner here */}
-              <div className="spinner">Loading...</div>
+              {/* Display your spinning animation here */}
+              <div className="w-12 h-12 border-t-4 border-orange-500 border-solid rounded-full animate-spin opacity-80"></div>
             </div>
           )}
-
-          {imageLoaded && (
-            <img
-              src={envpicjpg}
-              alt="billing"
-              className="w-full h-full p-5"
-              onLoad={() => setImageLoaded(true)} // Set imageLoaded to true when the image has loaded
-            />
-          )}
+          <Bounce>
+            {imageLoaded && (
+              <img
+                src={envpicjpg}
+                alt="billing"
+                className="w-full h-full p-5"
+                onLoad={() => setImageLoaded(true)} // Set imageLoaded to true when the image has loaded
+              />
+            )}
+          </Bounce>
         </div>
 
         {/* gradient start */}

@@ -20,20 +20,28 @@ import {
 
 export const navLinks = [
   {
-    id: "home",
+    id: "#home",
     title: "Home",
   },
   {
-    id: "features",
+    id: "#features",
     title: "Features",
+  },
+  {
+    id: "universal",
+    title: "Universal Energy",
+  },
+  {
+    id: "smart-farm",
+    title: "Smart Farm",
+  },
+  {
+    id: "charging-net",
+    title: "Charging Station",
   },
   {
     id: "product",
     title: "Product",
-  },
-  {
-    id: "clients",
-    title: "Clients",
   },
 ];
 
