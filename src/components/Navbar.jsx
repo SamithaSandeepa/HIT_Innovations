@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-
+import { Link } from "react-router-dom";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
 
@@ -31,7 +31,7 @@ const Navbar = ({ activeSection, onScroll, isHidden }) => {
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
-            <a href={`${nav.id}`}>{nav.title}</a>
+            <Link href={`${nav.id}`}>{nav.title}</Link>
           </li>
         ))}
       </ul>
