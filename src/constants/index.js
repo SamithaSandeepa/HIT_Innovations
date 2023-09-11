@@ -28,15 +28,15 @@ export const navLinks = [
     title: "Features",
   },
   {
-    id: "/universal",
+    id: "/#",
     title: "Universal Energy",
   },
   {
-    id: "/smart-farm",
+    id: "/#",
     title: "Smart Farm",
   },
   {
-    id: "/charging-net",
+    id: "/#",
     title: "Charging Station",
   },
   {
@@ -52,7 +52,7 @@ export const features = [
     title: "UNIVERSAL ENERGY",
     content:
       "The best credit cards offer some tantalizing combinations of promotions and prizes",
-    link: "/universal",
+    link: "/#",
   },
   {
     id: "feature-2",
