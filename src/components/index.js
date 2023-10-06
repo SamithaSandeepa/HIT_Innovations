@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import Billing from "./Universal";
+// import Billing from "./Universal";
 import CardDeal from "./CardDeal";
 import Business from "./Business";
 import Clients from "./Clients";
@@ -8,10 +8,11 @@ import Stats from "./Stats";
 import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import Hero from "./Hero";
-
+import UniBusiness from "./UniBusiness";
 export {
   Navbar,
-  Billing,
+  // Billing,
+  UniBusiness,
   CardDeal,
   Business,
   Clients,

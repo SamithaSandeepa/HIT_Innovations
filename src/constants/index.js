@@ -16,6 +16,11 @@ import {
   smartfarm,
   universal,
   charging,
+  ongrid,
+  hydp,
+  onGrd,
+  offGrd,
+  slrAgri,
 } from "../assets";
 
 export const navLinks = [
@@ -28,7 +33,7 @@ export const navLinks = [
     title: "Features",
   },
   {
-    id: "/#",
+    id: "/universal",
     title: "Universal Energy",
   },
   {
@@ -51,15 +56,15 @@ export const features = [
     icon: universal,
     title: "UNIVERSAL ENERGY",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
-    link: "/#",
+      "Universal Energy specializes in solar power systems, particularly tailored for agricultural applications, harnessing renewable energy to empower farms and enhance sustainability.",
+    link: "/universal",
   },
   {
     id: "feature-2",
     icon: smartfarm,
     title: "SMART FARM",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+    "Our Smart Farm integrates advanced technologies like IoT, AI, and automation to optimize agricultural processes, maximize yields, and ensure sustainable, efficient farming practices.",
     link: "#",
   },
   {
@@ -67,10 +72,41 @@ export const features = [
     icon: charging,
     title: "CHARGING STATION",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+    "Our E-Bike Charging System allows users to join our network, conveniently swap or charge their e-bike batteries, promoting eco-friendly transportation and hassle-free mobility solutions.",
     link: "#",
   },
+
+ 
 ];
+
+
+export const unifeatures = [
+  {
+    id: "unifeatures-1",
+    icon: onGrd, 
+    title: "ON-GRID SYSTEMS",
+    content:
+      " On-grid solar systems connect to the utility grid, reducing bills, cutting emissions, and offering financial incentives. They're ideal for urban areas.",
+    link: "/#",
+  },
+  {
+    id: "unifeatures-2",
+    icon: offGrd,
+    title: "OFF-GRID SYSTEMS",
+    content:"Off-grid solar systems function independently, crucial in remote areas. They require solar panels, batteries, and inverters for self-sufficient power generation, ideal for off-grid living and energy autonomy.",
+    link: "/#",
+  },
+  {
+    id: "unifeatures-3",
+    icon: slrAgri,
+    title: "SOLAR FOR AGRICULTURE",
+    content:"Solar power tools for agriculture include water pumps, dryers, and pest control devices. They improve farming efficiency, reduce costs, and promote sustainability by harnessing solar energy.",
+    link: "/#",
+  },
+
+ 
+];
+
 
 export const feedback = [
   {
