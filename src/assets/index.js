@@ -27,6 +27,13 @@ import envpicjpg from "./3421101-removebg-preview.png";
 import smartfarm from "./smartfarm.png";
 import universal from "./universal.png";
 import charging from "./charging.png";
+import uelogo from "./uelogo.png";
+import ongrid from "./ongrid.png";
+import hydp from "./hydp.png";
+import onGrd from "./onGrd.png";
+import offGrd from "./offGrd.png";
+import slrAgri from "./slrAgri.png";
+
 
 export {
   airbnb,
@@ -58,4 +65,10 @@ export {
   universal,
   smartfarm,
   charging,
+  uelogo,
+  ongrid,
+  hydp,
+  onGrd,
+  offGrd,
+  slrAgri,
 };
