@@ -40,8 +40,8 @@ const Contactus = () => {
         <div className="flex flex-col text-center w-full mb-12">
           <h2 className={styles.heading2}>Contact Us</h2>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-dimWhite">
-            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-            gentrify.
+            We would love to hear from you. Please fill out the form below and
+            we will get back to you as soon as possible.
           </p>
         </div>
         <div className="lg:w-4/5 md:w-2/3 mx-auto">
