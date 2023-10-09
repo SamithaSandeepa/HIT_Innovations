@@ -45,7 +45,7 @@ const Uni = () => {
                         </h1>
                     </div>
                 </div>
-                     <p className={`${styles.paragraph} mt-5 text-justify`}>
+                <p className={`${styles.paragraph} max-w-[100%] mt-5`}>
                                     With the aim of creating a energy sufficient Sri Lanka, our company needs to implement a number of very effective projects that have provided solutions to many problems faced by the people of our country. Also, we hope to lead our country to a new path by creating new technology.
                                  We have  provided solar and battery backup systems as a solution for power cuts for the Sir Lanka
                       </p>    
