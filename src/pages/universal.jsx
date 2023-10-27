@@ -37,15 +37,15 @@ const Uni = () => {
                     <img src={uelogo} alt="Logo"  style={{ width: "28%", height: "auto", align: "Left" }} />
                    
 
-                        <h1 className="flex-1 font-poppins font-semibold ss:text-[82px] text-[52px] text-bla ss:leading-[100.8px] leading-[75px] uppercase pt-10">
-                        <span style={{ color: "#38bdf8" }}>Universal</span>{" "} <span style={{ color: "#ffff"  }}>Energy</span>{" "}
-                       
-                        {/* <div class="mb-8 ...">mb-8   </div> */}
-                        {/* <span style={{ color: "#ffff"  }}>Energy</span>{" "} */}
-                        </h1>
+                    <h1 className="flex-1 font-poppins font-semibold ss:text-[82px] text-[52px] text-bla ss:leading-[100.8px] leading-[75px] uppercase pt-10">
+                         <span style={{ color: "#38bdf8", fontSize: "52px" }}>THE</span>{" "}
+                            <span style={{ color: "#38bdf8" }}>Universal</span>{" "}
+                             <span style={{ color: "#ffff" }}>Energy</span>
+                    </h1>
+
                     </div>
                 </div>
-                     <p className={`${styles.paragraph} mt-5 text-justify`}>
+                <p className={`${styles.paragraph} max-w-[100%] mt-5`}>
                                     With the aim of creating a energy sufficient Sri Lanka, our company needs to implement a number of very effective projects that have provided solutions to many problems faced by the people of our country. Also, we hope to lead our country to a new path by creating new technology.
                                  We have  provided solar and battery backup systems as a solution for power cuts for the Sir Lanka
                       </p>    
