@@ -37,11 +37,20 @@ const Uni = () => {
                     <img src={uelogo} alt="Logo"  style={{ width: "28%", height: "auto", align: "Left" }} />
                    
 
-                    <h1 className="flex-1 font-poppins font-semibold ss:text-[82px] text-[52px] text-bla ss:leading-[100.8px] leading-[75px] uppercase pt-10">
-                         <span style={{ color: "#38bdf8", fontSize: "52px" }}>THE</span>{" "}
-                            <span style={{ color: "#38bdf8" }}>Universal</span>{" "}
-                             <span style={{ color: "#ffff" }}>Energy</span>
+                    <h1 className="flex-1 font-poppins font-semibold ss:text-[82px] text-[32px] text-bla ss:leading-[100.8px] leading-[75px] uppercase pt-10">
+                        {/* <span style={{ color: "#38bdf8", fontSize: "32px", letterSpacing: "0" }}> */}
+                            <span style={{ color: "#38bdf8", fontSize: "32px", letterSpacing: "0", transform: "rotate(-90deg)", display: "inline-block", padding:0 }}>THE</span>
+                        {/* </span>{" "} */}
+                        <span style={{ color: "#38bdf8" }}>
+                            Universal
+                        </span>{" "}
+                        <span style={{ color: "#ffff" }}>
+                            Energy
+                        </span>
                     </h1>
+
+
+
 
                     </div>
                 </div>
