@@ -6,6 +6,7 @@ import {
   instagram,
   linkedin,
   twitter,
+  tiktok,
   airbnb,
   binance,
   coinbase,
@@ -25,12 +26,8 @@ import {
 
 export const navLinks = [
   {
-    id: "#home",
+    id: "home",
     title: "Home",
-  },
-  {
-    id: "#features",
-    title: "Features",
   },
   {
     id: "/universal",
@@ -64,7 +61,7 @@ export const features = [
     icon: smartfarm,
     title: "SMART FARM",
     content:
-    "Our Smart Farm integrates advanced technologies like IoT, AI, and automation to optimize agricultural processes, maximize yields, and ensure sustainable, efficient farming practices.",
+      "Our Smart Farm integrates advanced technologies like IoT, AI, and automation to optimize agricultural processes, maximize yields, and ensure sustainable, efficient farming practices.",
     link: "#",
   },
   {
@@ -72,18 +69,15 @@ export const features = [
     icon: charging,
     title: "CHARGING STATION",
     content:
-    "Our E-Bike Charging System allows users to join our network, conveniently swap or charge their e-bike batteries, promoting eco-friendly transportation and hassle-free mobility solutions.",
+      "Our E-Bike Charging System allows users to join our network, conveniently swap or charge their e-bike batteries, promoting eco-friendly transportation and hassle-free mobility solutions.",
     link: "#",
   },
-
- 
 ];
-
 
 export const unifeatures = [
   {
     id: "unifeatures-1",
-    icon: onGrd, 
+    icon: onGrd,
     title: "ON-GRID SYSTEMS",
     content:
       " On-grid solar systems connect to the utility grid, reducing bills, cutting emissions, and offering financial incentives. They're ideal for urban areas.",
@@ -93,20 +87,19 @@ export const unifeatures = [
     id: "unifeatures-2",
     icon: offGrd,
     title: "OFF-GRID SYSTEMS",
-    content:"Off-grid solar systems function independently, crucial in remote areas. They require solar panels, batteries, and inverters for self-sufficient power generation, ideal for off-grid living and energy autonomy.",
+    content:
+      "Off-grid solar systems function independently, crucial in remote areas. They require solar panels, batteries, and inverters for self-sufficient power generation, ideal for off-grid living and energy autonomy.",
     link: "/#",
   },
   {
     id: "unifeatures-3",
     icon: slrAgri,
     title: "SOLAR FOR AGRICULTURE",
-    content:"Solar power tools for agriculture include water pumps, dryers, and pest control devices. They improve farming efficiency, reduce costs, and promote sustainability by harnessing solar energy.",
+    content:
+      "Solar power tools for agriculture include water pumps, dryers, and pest control devices. They improve farming efficiency, reduce costs, and promote sustainability by harnessing solar energy.",
     link: "/#",
   },
-
- 
 ];
-
 
 export const feedback = [
   {
@@ -154,72 +147,77 @@ export const stats = [
 ];
 
 export const footerLinks = [
-  {
-    title: "Useful Links",
-    links: [
-      {
-        name: "Content",
-        link: "#",
-      },
-      {
-        name: "How it Works",
-        link: "#",
-      },
-      {
-        name: "Create",
-        link: "#",
-      },
-      {
-        name: "Explore",
-        link: "#",
-      },
-      {
-        name: "Terms & Services",
-        link: "#",
-      },
-    ],
-  },
-  {
-    title: "Community",
-    links: [
-      {
-        name: "Help Center",
-        link: "#",
-      },
-      {
-        name: "Partners",
-        link: "#",
-      },
-      {
-        name: "Suggestions",
-        link: "#",
-      },
-      {
-        name: "Blog",
-        link: "#",
-      },
-      {
-        name: "Newsletters",
-        link: "#",
-      },
-    ],
-  },
-  {
-    title: "Partner",
-    links: [
-      {
-        name: "Our Partner",
-        link: "#",
-      },
-      {
-        name: "Become a Partner",
-        link: "#",
-      },
-    ],
-  },
+  // {
+  //   title: "Useful Links",
+  //   links: [
+  //     {
+  //       name: "Universal Energy Solutions",
+  //       link: "/universal",
+  //     },
+  //     // {
+  //     //   name: "How it Works",
+  //     //   link: "#",
+  //     // },
+  //     // {
+  //     //   name: "Create",
+  //     //   link: "#",
+  //     // },
+  //     // {
+  //     //   name: "Explore",
+  //     //   link: "#",
+  //     // },
+  //     // {
+  //     //   name: "Terms & Services",
+  //     //   link: "#",
+  //     // },
+  //   ],
+  // },
+  // {
+  //   title: "Community",
+  //   links: [
+  //     {
+  //       name: "Help Center",
+  //       link: "#",
+  //     },
+  //     {
+  //       name: "Partners",
+  //       link: "#",
+  //     },
+  //     {
+  //       name: "Suggestions",
+  //       link: "#",
+  //     },
+  //     {
+  //       name: "Blog",
+  //       link: "#",
+  //     },
+  //     {
+  //       name: "Newsletters",
+  //       link: "#",
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "Partner",
+  //   links: [
+  //     {
+  //       name: "Our Partner",
+  //       link: "#",
+  //     },
+  //     {
+  //       name: "Become a Partner",
+  //       link: "#",
+  //     },
+  //   ],
+  // },
 ];
 
 export const socialMedia = [
+  {
+    id: "social-media-1",
+    icon: tiktok,
+    link: "https://www.tiktok.com/@hitinbznhn7?_t=8hZfXG7zpOU&_r=1",
+  },
   {
     id: "social-media-1",
     icon: instagram,
@@ -228,7 +226,7 @@ export const socialMedia = [
   {
     id: "social-media-2",
     icon: facebook,
-    link: "#",
+    link: "https://www.facebook.com/profile.php?id=100090731015102&mibextid=ZbWKwL",
   },
   {
     id: "social-media-3",

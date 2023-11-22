@@ -33,7 +33,7 @@ import hydp from "./hydp.png";
 import onGrd from "./onGrd.png";
 import offGrd from "./offGrd.png";
 import slrAgri from "./slrAgri.png";
-
+import tiktok from "./tiktok-icon.svg";
 
 export {
   airbnb,
@@ -71,4 +71,5 @@ export {
   onGrd,
   offGrd,
   slrAgri,
+  tiktok,
 };
