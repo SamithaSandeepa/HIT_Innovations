@@ -216,7 +216,7 @@ export const socialMedia = [
   {
     id: "social-media-1",
     icon: tiktok,
-    link: "https://www.tiktok.com/@hitinbznhn7?_t=8hZfXG7zpOU&_r=1",
+    link: "https://www.tiktok.com/@hitinnovations",
   },
   {
     id: "social-media-1",
